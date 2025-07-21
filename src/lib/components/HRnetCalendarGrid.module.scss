@@ -1,0 +1,26 @@
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #333333; /* Couleur de base pour tout le calendrier */
+  background-color: #ffffff; /* Fond blanc explicite */
+}
+
+.weekDay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 2px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 4px;
+  min-height: 24px;
+}
+
+

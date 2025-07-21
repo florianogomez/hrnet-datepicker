@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.datepickerWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.label {
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.error {
+  border-color: #e53935;
+}
+
+.errorText {
+  color: #e53935;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.dropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeInDropdown 0.2s ease;
+  min-width: 320px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@keyframes fadeInDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

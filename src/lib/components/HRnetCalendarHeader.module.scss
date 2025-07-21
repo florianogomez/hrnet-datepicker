@@ -1,0 +1,83 @@
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 6px 6px 0 0;
+  gap: 8px;
+}
+
+.prevButton,
+.nextButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #007bff;
+  transition: color 0.2s;
+  padding: 4px 8px;
+  border-radius: 4px;
+  min-width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  color: #0056b3;
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.monthYearSelectors {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.monthSelector,
+.yearSelector {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.9em;
+  color: #343a40;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  max-width: 120px;
+}
+
+.monthSelector {
+  min-width: 100px;
+}
+
+.yearSelector {
+  min-width: 70px;
+}
+
+.monthSelector:hover,
+.yearSelector:hover {
+  border-color: #007bff;
+}
+
+.monthSelector:focus,
+.yearSelector:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.currentMonth {
+  font-size: 1em;
+  font-weight: bold;
+  color: #343a40;
+  flex: 1;
+  text-align: center;
+}

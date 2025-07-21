@@ -1,0 +1,15 @@
+# Ignore demo and dev files
+src/demo/
+src/App.tsx
+src/main.tsx
+index.html
+*.test.*
+*.spec.*
+.vscode/
+node_modules/
+.git/
+.gitignore
+README.md
+vite.config.ts
+tsconfig.*
+public/
